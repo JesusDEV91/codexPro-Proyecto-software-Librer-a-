@@ -42,4 +42,4 @@ Ejecutar el proyecto desde NetBeans o tu IDE preferido.
 
 
 
-Desarrollado como Proyecto Final de Programación.
+Desarrollado como Proyecto Final de la asignatura Desarrollo de Interfaces.
