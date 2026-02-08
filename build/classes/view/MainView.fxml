@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<!-- Pantalla Principal (Main Screen) que gestiona la navegación del sistema -->
+
+<AnchorPane prefHeight="700.0" prefWidth="1100.0" style="-fx-background-color: #f4f7f6;" stylesheets="@MainView.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainViewController">
+   <children>
+      <!-- Menú Lateral (Sidebar) - Estilo profesional y coherente -->
+      <VBox prefHeight="700.0" prefWidth="240.0" styleClass="sidebar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" text="Codex Pro" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="50.0" left="20.0" top="30.0" />
+               </VBox.margin>
+            </Label>
+            
+            <VBox spacing="10.0">
+               <children>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#showLibros" prefHeight="50.0" prefWidth="240.0" styleClass="nav-button" text="📚 Gestión de Libros">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#showSocios" prefHeight="50.0" prefWidth="240.0" styleClass="nav-button" text="👥 Gestión de Socios">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#showPrestamos" prefHeight="50.0" prefWidth="240.0" styleClass="nav-button" text="🤝 Gestión de Préstamos">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </VBox>
+            
+            <VBox alignment="BOTTOM_CENTER" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+
+      <!-- Contenedor Dinámico (Requisito: Mínimo 3 vistas adicionales) -->
+      <!-- Aquí es donde se cargarán LibrosView.fxml, SociosView.fxml y PrestamosView.fxml -->
+      <StackPane fx:id="contentArea" layoutX="240.0" prefHeight="700.0" prefWidth="860.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="240.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="CENTER" spacing="20.0">
+               <children>
+                  <Label text="Bienvenido al Sistema de Gestión" textFill="#2c3e50">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Label>
+                  <Label text="Seleccione una opción del menú lateral para comenzar." textFill="#7f8c8d">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

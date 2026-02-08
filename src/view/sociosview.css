@@ -1,0 +1,29 @@
+/* --- CODEX PRO: MÓDULO DE SOCIOS --- */
+
+/* INPUTS REDONDEADOS */
+.text-field {
+    -fx-background-color: white;
+    -fx-border-color: #cbd5e1;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 10;
+}
+
+.text-field:focused {
+    -fx-border-color: #0d9488;
+    -fx-border-width: 2;
+}
+
+/* TABLA DE SOCIOS */
+.table-row-cell:selected {
+    -fx-background-color: #f0fdfa;
+}
+
+.table-row-cell:selected .text {
+    -fx-fill: #0d9488;
+}
+
+/* BOTONES (Reutilizando la lógica Senior) */
+.button-save { -fx-background-color: #10b981; -fx-text-fill: white; -fx-background-radius: 8; -fx-font-weight: bold; }
+.button-delete { -fx-background-color: #f87171; -fx-text-fill: white; -fx-background-radius: 8; }
+.button-update { -fx-background-color: #f59e0b; -fx-text-fill: white; -fx-background-radius: 8; }

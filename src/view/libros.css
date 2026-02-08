@@ -1,0 +1,41 @@
+/* --- CODEX PRO: MÓDULO DE LIBROS --- */
+
+/* CABECERA */
+.label-header {
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1e293b;
+}
+
+/* TABLA DE LIBROS */
+.table-view {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 12;
+}
+
+.table-view .column-header-background { -fx-background-color: #f1f5f9; }
+.table-view .column-header .label { -fx-text-fill: #475569; -fx-font-weight: bold; }
+
+/* CONTENEDOR TIPO CARD */
+.form-card {
+    -fx-background-color: white;
+    -fx-padding: 25;
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.06), 15, 0, 0, 8);
+}
+
+/* BOTONERA SINCRONIZADA */
+.button { -fx-cursor: hand; -fx-font-weight: bold; -fx-background-radius: 8; -fx-padding: 10 20; -fx-text-fill: white; }
+
+#btnGuardar { -fx-background-color: #10b981; }
+#btnGuardar:hover { -fx-background-color: #059669; }
+
+#btnActualizar { -fx-background-color: #f59e0b; }
+#btnActualizar:hover { -fx-background-color: #d97706; }
+
+#btnEliminar { -fx-background-color: #f87171; }
+#btnEliminar:hover { -fx-background-color: #ef4444; }
+
+.button-clear { -fx-background-color: #94a3b8; }

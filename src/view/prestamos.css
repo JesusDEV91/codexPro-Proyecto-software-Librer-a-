@@ -1,0 +1,104 @@
+/* GESTIÓN DE PRÉSTAMOS - ESTILO PROFESIONAL UNIFICADO CON SOCIOS */
+
+.root {
+    -fx-font-family: "Segoe UI", system-ui, sans-serif;
+    -fx-background-color: #f8fafc;
+}
+
+/* TÍTULO Y CABECERA */
+.label-header {
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1e293b;
+}
+
+/* DATEPICKER PERSONALIZADO (Sincronizado con Turquesa) */
+.date-picker {
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+
+.date-picker > .arrow-button {
+    -fx-background-color: #11CAA0; /* Color turquesa del sidebar */
+    -fx-background-radius: 0 10 10 0;
+}
+
+.date-picker > .arrow-button > .arrow {
+    -fx-background-color: white;
+}
+
+/* COMBOBOX SELECCIÓN */
+.combo-box {
+    -fx-background-color: white;
+    -fx-border-color: #cbd5e1;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-padding: 5;
+}
+
+.combo-box:focused {
+    -fx-border-color: #3b82f6;
+    -fx-border-width: 2;
+}
+
+/* ESTILO BASE DE BOTONES (Igual que en Socios) */
+.button {
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+    -fx-padding: 10 25;
+    -fx-text-fill: white;
+}
+
+
+.button-register {
+    -fx-background-color: #10b981; /* Emerald 500 */
+    -fx-text-fill: white; 
+    -fx-effect: dropshadow(three-pass-box, rgba(16, 185, 129, 0.2), 10, 0, 0, 5);
+}
+
+.button-register:hover {
+    -fx-background-color: #059669;
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+/* BOTÓN ELIMINAR (Rojo Coral como en Socios) */
+#btnEliminar {
+    -fx-background-color: #f87171;
+    -fx-effect: dropshadow(three-pass-box, rgba(248, 113, 113, 0.2), 10, 0, 0, 5);
+}
+
+#btnEliminar:hover {
+    -fx-background-color: #ef4444;
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+/* BOTÓN LIMPIAR (Gris Azulado como en Socios) */
+.button-secondary {
+    -fx-background-color: #94a3b8;
+    -fx-effect: dropshadow(three-pass-box, rgba(148, 163, 184, 0.2), 10, 0, 0, 5);
+}
+
+.button-secondary:hover {
+    -fx-background-color: #64748b;
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+/* CONTENEDOR DEL FORMULARIO (Estilo Card Card con sombra sutil) */
+.form-card {
+    -fx-background-color: white;
+    -fx-padding: 30;
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.08), 20, 0, 0, 10);
+}
+
+/* ESTADO DE NOTIFICACIÓN */
+#lblStatus {
+    -fx-font-style: italic;
+    -fx-font-size: 13px;
+    -fx-text-fill: #94a3b8;
+    -fx-padding: 10 0 0 0;
+}

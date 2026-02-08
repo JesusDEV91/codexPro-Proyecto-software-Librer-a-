@@ -1,0 +1,43 @@
+
+.root {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-background-color: #f1f5f9;
+}
+
+
+.sidebar {
+    -fx-background-color: #0d9488; 
+    -fx-padding: 0;
+    -fx-spacing: 5;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.15), 15, 0, 8, 0);
+}
+
+
+.menu-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white; 
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 15 25;
+    -fx-background-radius: 0;
+    -fx-cursor: hand;
+    -fx-font-weight: bold; 
+    -fx-font-size: 14px;
+}
+
+.menu-button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+}
+
+.menu-button:focused {
+    -fx-background-color: #065f46; /* Resaltado activo */
+    -fx-border-color: transparent transparent transparent #ffffff;
+    -fx-border-width: 0 0 0 5;
+}
+
+
+.sidebar-title {
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-padding: 30 20;
+}
