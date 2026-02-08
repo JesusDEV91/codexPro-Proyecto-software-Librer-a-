@@ -36,6 +36,10 @@ Ejecutar el proyecto desde NetBeans o tu IDE preferido.
 
 📸 Vista Previa
 
-(Aquí puedes arrastrar una de las capturas de pantalla que hiciste para que se vea en GitHub)
+<img width="1097" height="695" alt="image" src="https://github.com/user-attachments/assets/28ba6aa4-99fe-4e7a-a19d-2b9a237fed4b" />
+<img width="1092" height="697" alt="image" src="https://github.com/user-attachments/assets/c411c4f9-d1fc-4f6c-bfcb-7b8cb70104c5" />
+<img width="1093" height="701" alt="image" src="https://github.com/user-attachments/assets/603ba0e3-34bc-4858-b3b3-bbc1abe82182" />
+
+
 
 Desarrollado como Proyecto Final de Programación.
