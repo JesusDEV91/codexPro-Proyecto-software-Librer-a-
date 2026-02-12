@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: #f8fafc;" stylesheets="@libros.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FXMLDocumentController">
+<AnchorPane prefHeight="650.0" prefWidth="950.0" style="-fx-background-color: #f8fafc;" stylesheets="@libros.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FXMLDocumentController">
     <children>
         <VBox spacing="20.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
             <children>
@@ -22,6 +22,7 @@
                     </font>
                 </Label>
                 
+                <!-- Restaurada sección de Filtrado -->
                 <HBox alignment="CENTER_LEFT" spacing="15.0">
                     <children>
                         <Label text="Filtrar catálogo:" textFill="#64748b">
@@ -34,16 +35,19 @@
                     </children>
                 </HBox>
 
+                <!-- Tabla con columna de Fecha Alta incluida -->
                 <TableView fx:id="tableLibros" prefHeight="300.0" VBox.vgrow="ALWAYS">
                     <columns>
                         <TableColumn fx:id="colId" prefWidth="60.0" text="ID" />
-                        <TableColumn fx:id="colTitulo" prefWidth="300.0" text="Título del Libro" />
-                        <TableColumn fx:id="colAutor" prefWidth="200.0" text="Autor" />
-                        <TableColumn fx:id="colCategoria" prefWidth="150.0" text="Categoría" />
-                        <TableColumn fx:id="colStock" prefWidth="100.0" text="Stock" />
+                        <TableColumn fx:id="colTitulo" prefWidth="250.0" text="Título del Libro" />
+                        <TableColumn fx:id="colAutor" prefWidth="180.0" text="Autor" />
+                        <TableColumn fx:id="colCategoria" prefWidth="130.0" text="Categoría" />
+                        <TableColumn fx:id="colStock" prefWidth="80.0" text="Stock" />
+                        <TableColumn fx:id="colFechaRegistro" prefWidth="120.0" text="Fecha Alta" />
                     </columns>
                 </TableView>
 
+                <!-- Formulario con DatePicker de Fecha Registro -->
                 <VBox spacing="15.0" style="-fx-background-color: white; -fx-padding: 25; -fx-background-radius: 20; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.06), 15, 0, 0, 8);">
                     <children>
                         <HBox spacing="20.0">
@@ -73,7 +77,7 @@
                                 <VBox spacing="5.0">
                                     <children>
                                         <Label text="Fecha Registro:" textFill="#475569" />
-                                        <DatePicker fx:id="datePrestamo" prefHeight="35.0" prefWidth="200.0" />
+                                        <DatePicker fx:id="dateRegistro" prefHeight="35.0" prefWidth="200.0" />
                                     </children>
                                 </VBox>
                                 <HBox alignment="BOTTOM_RIGHT" spacing="12.0" HBox.hgrow="ALWAYS">

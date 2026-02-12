@@ -29,7 +29,7 @@
 }
 
 .menu-button:focused {
-    -fx-background-color: #065f46; /* Resaltado activo */
+    -fx-background-color: #065f46; 
     -fx-border-color: transparent transparent transparent #ffffff;
     -fx-border-width: 0 0 0 5;
 }

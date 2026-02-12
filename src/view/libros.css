@@ -1,13 +1,11 @@
-/* --- CODEX PRO: MÓDULO DE LIBROS --- */
 
-/* CABECERA */
 .label-header {
     -fx-font-size: 32px;
     -fx-font-weight: bold;
     -fx-text-fill: #1e293b;
 }
 
-/* TABLA DE LIBROS */
+
 .table-view {
     -fx-background-color: white;
     -fx-background-radius: 12;
@@ -18,7 +16,7 @@
 .table-view .column-header-background { -fx-background-color: #f1f5f9; }
 .table-view .column-header .label { -fx-text-fill: #475569; -fx-font-weight: bold; }
 
-/* CONTENEDOR TIPO CARD */
+
 .form-card {
     -fx-background-color: white;
     -fx-padding: 25;
@@ -26,7 +24,7 @@
     -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.06), 15, 0, 0, 8);
 }
 
-/* BOTONERA SINCRONIZADA */
+
 .button { -fx-cursor: hand; -fx-font-weight: bold; -fx-background-radius: 8; -fx-padding: 10 20; -fx-text-fill: white; }
 
 #btnGuardar { -fx-background-color: #10b981; }
